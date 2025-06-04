@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildformat Umwandler & Icon Ersteller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bildformat Umwandler & Icon Ersteller</h1>
+        
+        <!-- Update Benachrichtigung -->
+        <div id="updateNotification" style="display:none;" class="update-notification">
+            <p>Ein Update ist verfügbar! <a href="https://github.com/DEIN_GITHUB_USER/DEIN_REPOSITORY/releases" target="_blank">Hier klicken, um es herunterzuladen</a>.</p>
+        </div>
+        
+        <div class="flex-container">
+            <div id="imageConversionSection" class="section">
+                <h2>Bildformat Umwandeln</h2>
+                <input type="file" id="fileInput" accept="image/*">
+                <br><br>
+                <label for="formatSelect">Wähle Ziel-Format:</label>
+                <select id="formatSelect">
+                    <option value="image/png">PNG</option>
+                    <option value="image/jpeg">JPG</option>
+                    <option value="image/gif">GIF</option>
+                    <option value="image/webp">WEBP</option>
+                    <option value="image/bmp">BMP</option>
+                </select>
+            </div>
+            
+            <div id="iconCreationSection" class="section">
+                <h2>Icon Erstellen</h2>
+                <label for="iconSize">Größe des Icons (px):</label>
+                <input type="number" id="iconSize" value="64" min="16" max="512">
+                <br><br>
+                <input type="file" id="iconFileInput" accept="image/*">
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="convertButton">Bild Umwandeln</button>
+            <button id="downloadButton" style="display:none;">Download Bild</button>
+            <br><br>
+            <button id="createIconButton">Icon Erstellen</button>
+            <button id="downloadIconButton" style="display:none;">Download Icon</button>
+        </div>
+
+        <br><br>
+        
+        <div id="output"></div>
+        <div id="iconOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

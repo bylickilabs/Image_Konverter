@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section {
+    width: 45%;
+    text-align: left;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="file"], input[type="number"], select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+.update-notification {
+    background-color: #ffcc00;
+    color: black;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #ffaa00;
+}
+
+.update-notification a {
+    color: blue;
+    text-decoration: underline;
+}
